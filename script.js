@@ -6,7 +6,6 @@ import {
   Voice,
   Formatter,
   Beam,
-  BarlineType
 } from "./vendor/vexflow.js";
 
 /* -----------------------
@@ -323,9 +322,6 @@ function renderOption(container, measures) {
     const stave = new Stave(x, 16, staveWidth);
     if (i === 0) {
       stave.addClef("treble").addTimeSignature("4/4");
-    }
-    if (i === measures.length-1) {
-      stave.setEndBarType(BarlineType.END);
     }
     stave.setContext(context).draw();
     staves.push(stave);
