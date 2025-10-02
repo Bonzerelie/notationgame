@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>One or Two Bars — Ear & Notation Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Home Screen -->
+    <section id="home-screen" class="screen active">
+      <div class="card intro">
+        <h1>🎵 One or Two Bars</h1>
+        <p>
+          Listen to a 1-bar or 2-bar melody (4/4 @ 100 BPM), then pick the correct sheet-music
+          notation from four nearly identical options. Notes may include whole, half, quarter, and eighth
+          values (plus rests). Only one answer matches exactly.
+        </p>
+        <div class="mode-buttons">
+          <button id="start-1" class="btn primary">Play: 1 Bar</button>
+          <button id="start-2" class="btn primary">Play: 2 Bars</button>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>All audio stops whenever you press a new button.</span>
+      </footer>
+    </section>
+
+    <!-- Game Screen -->
+    <section id="game-screen" class="screen">
+      <header class="topbar">
+        <button id="home-btn" class="btn ghost" aria-label="Go Home">Home</button>
+        <div class="spacer"></div>
+        <button id="play-btn" class="btn accent" aria-label="Play Recording">▶ Play Recording</button>
+      </header>
+
+      <div class="hud">
+        <div class="stat">
+          <span class="label">Current Mode</span>
+          <span id="mode-label" class="value">1 Bar</span>
+        </div>
+        <div class="stat">
+          <span class="label">Streak</span>
+          <span id="streak" class="value">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">Correct</span>
+          <span id="correct-count" class="value">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">Total</span>
+          <span id="total-count" class="value">0</span>
+        </div>
+      </div>
+
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+
+      <div id="options" class="options-grid">
+        <!-- Four option cards are created dynamically -->
+      </div>
+    </section>
+  </div>
+
+  <!-- VexFlow (ESM) -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
