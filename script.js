@@ -7,7 +7,7 @@ import {
   Formatter,
   Beam,
   Barline
-} from "https://unpkg.com/vexflow@4.2.3/build/esm/vexflow.js";
+} from "./vendor/vexflow.js";
 
 /* -----------------------
    DOM & UI Wiring
