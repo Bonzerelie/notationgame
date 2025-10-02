@@ -325,7 +325,7 @@ function renderOption(container, measures) {
       stave.addClef("treble").addTimeSignature("4/4");
     }
     if (i === measures.length-1) {
-      stave.setEndBarType(Barline.type.END);
+      stave.setEndBarType(BarlineType.END);
     }
     stave.setContext(context).draw();
     staves.push(stave);
