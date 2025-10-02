@@ -6,7 +6,8 @@ import {
   Voice,
   Formatter,
   Beam,
-  Barline
+  BarlineType
+
 } from "./vendor/vexflow.js";
 
 /* -----------------------
