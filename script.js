@@ -7,7 +7,6 @@ import {
   Formatter,
   Beam,
   BarlineType
-
 } from "./vendor/vexflow.js";
 
 /* -----------------------
